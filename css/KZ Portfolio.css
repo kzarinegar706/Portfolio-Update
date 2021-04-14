@@ -1,0 +1,272 @@
+
+  @font-face{
+       font-family: "font";
+       src: url("fonts/AndroidAssassinItalic-eDDp.ttf") format("truetype");
+   }
+   @font-face{
+    font-family: "space";
+    src: url("fonts/destructobeambb_bold.ttf") format("truetype");
+}
+
+   .background > img{
+       position: fixed;
+       left: 0px;
+       top: 0px;
+       width: 100em;
+       height: 100em;
+   }
+
+   header > h1{
+       position: absolute;
+       top: 5em;
+       left: 20em;
+       z-index: 2;
+       color: white;
+       font-family: 'font';
+   }
+
+   header > img{
+       position: absolute;
+       z-index: 2;
+       left: 23em;
+       top: 1.5em;
+       height: 17em;
+       opacity: .6;
+   }
+
+   ul{
+    position: absolute;
+    list-style: none;
+    top: -4em;
+    left: -1em;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: column;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: flex-end;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    align-content: flex-start;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    z-index: 2;
+   
+} 
+
+   li{
+    text-align: left;
+    float: left;
+    display: block;
+    text-decoration: underline;
+    position: relative;
+    transition-duration: 0.5s; 
+    color: white;
+    
+}
+
+   ul li ul{
+    border-radius: 20px;
+    text-align: left;
+    background: black;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 1rem;
+    position: absolute;
+    transition: all 2s ease;
+    margin-top: 3rem;
+    left:0px;
+    display: none;
+    
+   }
+
+   ul li:hover > ul, 
+   ul li ul:hover{
+       text-align: center;
+       top: 35px;
+       left: 20px;
+       visibility: visible;
+       opacity: 1;
+       display: block;
+      
+   }
+
+   ul li ul li{
+       clear: both;
+       width: 75%;
+       color: lawngreen;
+       width: 10em;
+       height: 3em;
+       list-style-image: url('../images/alienhead2.png');
+   }
+   ul li ul li:hover{
+       filter: brightness(25%);
+   }
+
+   .flex1{
+    order: 1;
+    margin: 1.5em;
+    padding: 1.5em;
+    flex: 5 5 1em;/*growth stretch/shrink flex-basis*/
+    color: white;
+   } 
+
+   .shipleft > img{
+       height: 12em;
+       width: 12em;
+       position: absolute;
+       right: -200px;
+       top: 22em;
+       -ms-transform: translate(-1500px, 0px);
+       -webkit-transform: translate(-1500px, 0px);
+       transform: translate(-1500px, 0px);
+       transition: 2s;
+   }
+
+   .gif > img{
+      width: 80em;
+      height: 90em;
+      -webkit-transform: rotateZ(3600000deg);
+      transform: rotateZ(3600000deg);
+      transition: 300000s;
+      position: fixed;
+
+   }
+   
+   .back > img{
+       position: absolute;
+       top: 0px;
+       right: 0px;
+       height: 20em;
+       width: 20em;
+       z-index: 2;
+       opacity: 1;
+   }
+
+   .black > img{
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       width: 90em;
+       height: 20em;
+       z-index: 1;
+       opacity: .85;
+   }
+   .k img{
+       position: absolute;
+       top: 10.5em;
+       left: 30em;
+       width: 1em;
+       height: 1em;
+       z-index: 3;
+       -ms-transform: skewX(-30deg);
+       -webkit-transform: skewX(-30deg);
+       transform: skewX(-30deg);
+       transition: 1s;
+   }
+   .z img{
+    position: absolute;
+    top: 10.5em;
+    left: 32em;
+    width: 1em;
+    height: 1em;
+    z-index: 3;
+    -ms-transform: skewX(30deg);
+    -webkit-transform: skewX(30deg);
+    transform: skewX(30deg);
+    transition: 1s;
+}
+  .blackk > img{
+    position: absolute;
+    top: 50em;
+    left: 0px;
+    width: 95em;
+    height: 50em;
+    z-index: 1;
+    opacity: .85;
+}
+   .scroll marquee{
+    overflow: hidden;
+    position: relative;
+    top: 20em;
+    left: 0em;
+    z-index: 3;
+}
+  .scroll marquee p{
+    position: relative;
+    width: 0%;
+    margin: 0;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-right 3s linear infinite;
+    -webkit-animation: scroll-right 3s linear infinite;
+    animation: scroll-right 3s linear infinite;
+}
+
+article > h1{
+    position: absolute;
+    top: 17em;
+    color: lawngreen;
+    font-size: 300%;
+    z-index: 3;
+    font-family: 'space';
+    left: 2em;
+}
+article img{
+    position: relative;
+    height: 10em;
+    width: 10em;
+    border-radius: 90px;
+    top: 25em;
+    left: 40em;
+    z-index: 3;
+}
+article p{
+    position: relative;
+    z-index: 3;
+    top: 21em;
+    left: 12em;
+    color: white;
+    font-family: 'space';
+    width: 50em;
+    text-align: center;
+    font-size: 125%;
+}
+
+article > h3{
+    font-family: sans-serif;
+    position: absolute;
+    top: 48em;
+    left: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 3;
+    font-size: 175%;
+}
+article h3 a{
+    color: lawngreen;
+    filter: brightness(50%);
+    text-decoration: none;
+}
+article h3 a:hover{
+    filter: brightness(100%);
+    text-decoration: underline;
+}
+
+article > ul{
+    position: absolute;
+    top: 65em;
+    left: -29em;
+    width: 70em;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: row;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    /*height: 250px;*/
+    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    filter: brightness(75%);
+}
+ .flex:hover{
+    filter: brightness(200%);
+} 
+}

@@ -1,0 +1,282 @@
+body{
+    width: 100vh;
+}
+.green > img{
+    width: 65em;
+    height: 63em;
+    position: absolute;
+    left: 14.5%;
+    top: 5em;
+}
+.green2 > img{
+    width: 80em;
+    height: 50em;
+    position: absolute;
+    left: 6.5em;
+    top: 12em;
+    opacity: 0.9
+}
+.res > h1{
+    position: absolute;
+    top:1.5em;
+    left: 13.3em;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 350%;
+    border-bottom: 2px black solid;
+    font-family: fantasy;
+}
+.background > img{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 95em;
+    height: 100em;
+    z-index: -1;
+}
+.topleft > img{
+    position: relative;
+    width: 9em;
+    height: 9em;
+    left: 5em;
+    top: 3em;
+}
+.topright > img{
+    position: absolute;
+    width: 9em;
+    height: 9em;
+    left: 78em;
+    top: 4em;
+}
+.bottomleft > img{
+    position: absolute;
+    width: 9em;
+    height: 9em;
+    left: 5em;
+    top: 61em;
+}
+.bottomright > img{
+    position: absolute;
+    width: 9em;
+    height: 9em;
+    left: 78em;
+    top: 61em;
+}
+.name > h1{
+    position: absolute;
+    top: 6em;
+    left: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.info > h3 > a{
+    font-family: sans-serif;
+    position: absolute;
+    top: 13.5em;
+    left: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: blue;
+    filter: brightness(50%);
+}
+.info > h3 > a:hover{
+    filter: brightness(150%);
+    text-decoration: underline;
+}
+.info2 > h3{
+    font-family: sans-serif;
+    position: absolute;
+    top: 14em;
+    left: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.info2 h3 a{
+    color: blue;
+    filter: brightness(50%);
+    text-decoration: none;
+}
+.info2 h3 a:hover{
+    filter: brightness(100%);
+    text-decoration: underline;
+}
+
+.info3 h2{
+    position: relative;
+    top: 6em;
+    left: 27em;
+}
+.info3 p{
+    position: relative;
+    top: 7.8em;
+    left: 25em;
+    font-family: sans-serif;
+}
+.mid > p{
+    position: absolute;
+    top: 22em;
+    left: 34em;
+    font-family: sans-serif;
+}
+
+.info4 h2{
+    position: absolute;
+    top: 16.5em;
+    left: 24em;
+}
+
+.info5 ul li{
+    position: relative;
+    top: 13em;
+    left: 20em;
+    font-family: sans-serif;
+}
+
+.education h2{
+    position: absolute;
+    top: 30em;
+    left: 28em;
+}
+.ul{
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: row;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    /*height: 250px;*/
+    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    width: 65em;
+    font-family: sans-serif;
+}
+.flex1{
+    position: relative;
+    left: 17em;
+    top: 17em;
+    order: 1;
+    margin: .5em;
+    padding: .5em;
+    flex: 10 10 5em;/*growth stretch/shrink flex-basis*/
+}
+
+.ed{
+    position: relative;
+    top: 17em;
+    left: 26em;
+    font-family: sans-serif;
+}
+.info6 h2{
+    position: absolute;
+    top: 37em;
+    left: 24em;
+}
+.employ{
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: row;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    /*height: 250px;*/
+    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    width: 75em;
+    font-family: sans-serif;
+}
+.flex2{
+    position: relative;
+    left: 17em;
+    top: 20em;
+    order: 1;
+    margin: .5em;
+    padding: .5em;
+    flex: 10 10 5em;/*growth stretch/shrink flex-basis*/
+}
+.bus p{
+    position: absolute;
+    top: 60em;
+    left: 18em;
+}
+.duty p{
+    position: absolute;
+    top: 62em;
+    left: 24em;
+    font-family: sans-serif;
+}
+
+  .drop ul{
+    position: absolute;
+    list-style: none;
+    top: 1em;
+    left: 9em;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: column;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: flex-end;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    align-content: flex-start;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    z-index: 2;
+} 
+
+   .drop li{
+    text-align: left;
+    float: left;
+    display: block;
+    text-decoration: underline;
+    position: relative;
+    transition-duration: 0.5s; 
+    color: white;
+    
+}
+
+   .drop ul li ul{
+    border-radius: 20px;
+    text-align: left;
+    background: black;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 1rem;
+    position: absolute;
+    transition: all 2s ease;
+    margin-top: 3rem;
+    left:0px;
+    display: none;
+    
+   }
+
+   .drop ul li:hover > ul, 
+   ul li ul:hover{
+       text-align: center;
+       top: 35px;
+       left: 20px;
+       visibility: visible;
+       opacity: 1;
+       display: block;
+      
+   }
+
+   .drop ul li ul li{
+       clear: both;
+       width: 75%;
+       height: 3.5em;
+       color: green;
+       width: 10em;
+   }
+
+   .drop ul li ul li:hover{
+    filter: brightness(50%);
+}
+
+   .flex3{
+    order: 1;
+    margin: 1.5em;
+    padding: 1.5em;
+    flex: 5 5 1em;/*growth stretch/shrink flex-basis*/
+   } 
+   .flex3 > h2 > a{
+       color: black;
+   }
+   .flex3 > h2 > a:hover{
+       color: white;
+   }
